@@ -1,4 +1,4 @@
-# vSphere8 Upgrade
+# vSphere 8 Upgrade
  Tips, tricks, gotchas and resources from VMware TAM's
 
 ## What's New in vSphere 8
@@ -28,7 +28,7 @@
 
  ## Upgrading vSphere 
  - Upgrade Order
- 
+
 
  ## What's Next
 
