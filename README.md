@@ -4,6 +4,8 @@
 ## What's New in vSphere 8
 - [VMW - The Cloud Platform Tech Zone: What's New in vSphere 8](https://core.vmware.com/resource/whats-new-vsphere-8)
 - [VMW - The Cloud Platform Tech Zone: vSphere 8 - Latest Content](https://core.vmware.com/vmware-vsphere-8)
+    - **Remember this -->** [VMW - The Cloud Platform Tech Zone: vSphere 8 Upgrade Activity Path](https://core.vmware.com/vsphere-8-upgrade-activity-path)
+    - [VMW - The Cloud Platform Tech Zone: vSphere Configuration Profiles](https://core.vmware.com/vsphere-configuration-profiles)
 - [VMW Docs - VMware vSphere 8.0 Release Notes](https://docs.vmware.com/en/VMware-vSphere/8.0/rn/vmware-vsphere-80-release-notes/index.html) 
 
 
@@ -27,17 +29,34 @@
 - Other Stuff
 
  ## Upgrading vSphere 
- - Upgrade Order
+ 
+Upgrade preparation checklist
+- Finish upgrade documentation plan 
+- Gather needed software and hardware ISOs 
+- Test ESXi host remote access credentials  
+- Set a longer maintenance window than needed  
+- Have proactive GSS ticket handy  
 
+Upgrade order list
+
+*An actual execution order should be in your upgrade documentation plan. The below is an example (which is not meant to be comprehensive):*
+
+- Backup the environment  
+- Upgrade vCenter server  
+- Install vCenter Plugins  
+- Upgrade ESXi Hosts  
+- Upgrade the vSphere Distributed Switches  
+- Upgrade VMware Tools  
+- Upgrade VMware Virtual Hardware   
 
  ## What's Next
 
- Other Stuff
-- Is there an API on [insert feature / capability]? Check  https://developer.vmware.com/apis
-- Scalability / Config Max Questions? https://configmax.vmware.com/
-- TAM Customer Webinars?
-- Link to Ariel's vSphere 7 Upgrafe repo.
-- vCenter Build Numbers
-- ESXi Build Numbers
-- Release Notes Tracker - Link and Highlights
--  
+Other Stuff
+- [VMW vSphere Blog - New Release Model for vSphere 8](https://blogs.vmware.com/vsphere/2022/10/new-release-model-for-vsphere-8.html)
+- [vCenter build numbers and release dates (KB 2143838)](https://kb.vmware.com/s/article/2143838)  
+- [ESXi build numbers and release dates (KB 2143832)](https://kb.vmware.com/s/article/2143832)
+- [Is there an API?](https://developer.vmware.com/apis)
+- [Scalabiltiy/Configuration Max](https://configmax.vmware.com/)
+
+- [Upgrade from 6.7 to 7.0U3](https://github.com/arielsanchezmora/vSphere-67-Upgrade-to-7u3)
+    - Special Shout to my fellow VMW TAM and great friend [Ariel Sanchez Mora](https://github.com/arielsanchezmora)
